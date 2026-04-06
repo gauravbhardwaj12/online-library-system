@@ -5,14 +5,7 @@ import BookCard from "../components/BookCard";
 import "./Home.css";
 
 const CATEGORY_ICONS = {
-  Fiction: "📖",
-  "Non-Fiction": "📰",
-  "Sci-Fi": "🚀",
-  Mystery: "🔍",
-  Romance: "💌",
-  Biography: "🏅",
-  Fantasy: "🐉",
-  Thriller: "⚡",
+
 };
 
 const Home = () => {
