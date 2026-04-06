@@ -1,0 +1,69 @@
+.detail-back-row { padding: 32px 0 20px; }
+.back-btn { font-size: 0.85rem; }
+
+.detail-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 700px) {
+  .detail-card { grid-template-columns: 1fr; gap: 28px; padding: 24px; }
+}
+
+.detail-cover-col { display: flex; flex-direction: column; align-items: center; }
+
+.detail-cover {
+  width: 100%;
+  max-width: 260px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  display: block;
+  background: var(--bg-secondary);
+}
+
+.detail-info-col { display: flex; flex-direction: column; gap: 20px; }
+
+.detail-title { font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.2; }
+
+.detail-author { font-size: 1.05rem; color: var(--text-secondary); margin-top: -12px; }
+
+.detail-stars { display: flex; align-items: center; gap: 4px; font-size: 1.4rem; }
+.detail-stars .star-filled { color: var(--accent); }
+.detail-stars .star-empty { color: var(--border); }
+.rating-number { font-family: 'Source Sans 3', sans-serif; font-size: 0.9rem; color: var(--text-secondary); margin-left: 8px; }
+
+.detail-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.meta-item { display: flex; flex-direction: column; gap: 2px; }
+.meta-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+.meta-value { font-size: 0.95rem; color: var(--text-primary); font-weight: 500; }
+
+.desc-heading { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; margin-bottom: 10px; color: var(--accent); }
+.detail-description p { color: var(--text-secondary); line-height: 1.75; font-size: 0.95rem; }
+
+.detail-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
+
+.not-found-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - var(--nav-height) - 80px);
+  gap: 12px;
+}
