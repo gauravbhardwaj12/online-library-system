@@ -90,12 +90,12 @@ const AddBook = () => {
       <div className="container add-book-container">
         <div className="add-book-header">
           <h1>Add a New Book</h1>
-          <p className="add-book-subtitle">Share a book with the community — fill in the details below.</p>
+          <p className="add-book-subtitle">fill in the details below.</p>
         </div>
 
         {submitted && (
           <div className="success-banner" role="alert">
-            ✅ Book added successfully! Redirecting to the library…
+            Book added successfully
           </div>
         )}
 
