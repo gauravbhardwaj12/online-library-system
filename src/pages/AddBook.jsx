@@ -22,7 +22,7 @@ const validate = (fields) => {
   if (!fields.rating) {
     errors.rating = "Rating is required.";
   } else if (isNaN(rating) || rating < 0 || rating > 5) {
-    errors.rating = "Rating must be between 0 and 5.";
+    errors.rating = "Rating 0 and 5.";
   }
 
   if (fields.year) {
@@ -105,7 +105,7 @@ const AddBook = () => {
             <input
               id="title" name="title" type="text"
               className={`form-input ${errors.title ? "error" : ""}`}
-              placeholder="e.g. The Great Gatsby"
+              placeholder="Enter Title"
               value={fields.title} onChange={handleChange}
             />
             {errors.title && <span className="form-error">{errors.title}</span>}
@@ -116,7 +116,7 @@ const AddBook = () => {
             <input
               id="author" name="author" type="text"
               className={`form-input ${errors.author ? "error" : ""}`}
-              placeholder="e.g. F. Scott Fitzgerald"
+              placeholder="Enter AUthor"
               value={fields.author} onChange={handleChange}
             />
             {errors.author && <span className="form-error">{errors.author}</span>}
@@ -142,7 +142,7 @@ const AddBook = () => {
             <textarea
               id="description" name="description"
               className={`form-textarea ${errors.description ? "error" : ""}`}
-              placeholder="Write a short summary of the book…"
+              placeholder="Description"
               value={fields.description} onChange={handleChange} rows={4}
             />
             {errors.description && <span className="form-error">{errors.description}</span>}
