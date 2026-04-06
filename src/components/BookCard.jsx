@@ -26,9 +26,7 @@ const BookCard = ({ book }) => {
         alt={`Cover of ${book.title}`}
         className="book-card-cover"
         loading="lazy"
-        onError={(e) => {
-          e.target.src = "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=300&h=400&fit=crop";
-        }}
+        onError={(e) => {        }}
       />
       <div className="book-card-body">
         <h3 className="book-card-title">{book.title}</h3>
