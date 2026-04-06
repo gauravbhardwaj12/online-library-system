@@ -2,11 +2,7 @@ export const CATEGORIES = [
   "Fiction",
   "Non-Fiction",
   "Sci-Fi",
-  "Mystery",
-  "Romance",
-  "Biography",
-  "Fantasy",
-  "Thriller",
+  "Mystery"
 ];
 
 export const INITIAL_BOOKS = [
