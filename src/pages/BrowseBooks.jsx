@@ -1,8 +1,9 @@
-import { useState, useMemo } from "react";
+
 import { useParams, Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { CATEGORIES } from "../data/books";
 import BookCard from "../components/BookCard";
+import { useState, useMemo } from "react";
 import "./BrowseBooks.css";
 
 const BrowseBooks = () => {
@@ -44,7 +45,7 @@ const BrowseBooks = () => {
                 "cat-link" + (isActive && !category ? " cat-link-active" : "")
               }
             >
-              📚 All Books
+              All Books
               <span className="cat-count">{allBooks.length}</span>
             </NavLink>
 
@@ -100,7 +101,7 @@ const BrowseBooks = () => {
             <div className="no-results">
               <p className="no-results-icon">🔎</p>
               <h3>No books found</h3>
-              <p>Try adjusting your search or browse a different category.</p>
+              <p>browse a different category.</p>
               <Link to="/books" className="btn btn-primary" style={{ marginTop: "16px" }}>
                 Show All Books
               </Link>
